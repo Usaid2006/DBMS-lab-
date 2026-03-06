@@ -1,0 +1,47 @@
+---------------------------------------------------------PRARTICAL 7
+
+create or replace procedure evennumber
+as
+a number;
+begin
+a := 0;
+while a < 20 loop
+dbms_output.put_line(a);
+a := a+2;
+end loop;
+end;
+/
+
+ set serveroutput on;
+---
+create or replace procedure summation
+as
+a number:= 0;
+i number := 1;
+begin
+while a <= 20 loop
+a := a + i;
+i := i + 1;
+
+dbms_output.put_line(a);
+
+end loop;
+end;
+/
+---------------------------------------------------------PRATICAL 8-----------------------
+CREATE OR REPLACE PROCEDURE test
+AS
+   cs   NUMBER := 45;
+   os   NUMBER := 50;
+   dbms NUMBER := 75;
+   m3   NUMBER := 95;
+BEGIN
+total := cs + os + dbms +m3;
+DBMS_OUTPUT.PUT_LINE('total');
+   IF cs >= 50 AND os >= 50 AND dbms >= 50 AND m3 >= 50 THEN
+      DBMS_OUTPUT.PUT_LINE('PASS');
+   ELSE
+      DBMS_OUTPUT.PUT_LINE('FAIL');
+   END IF;
+END;
+/
